@@ -1,0 +1,220 @@
+/**
+ * Share Your Story - Main Sass File
+ */
+/**
+ * ================
+ * VARIABLES
+ * ================
+ */
+$body-font: 'Open Sans', 'Helvetica', Arial, Verdana, sans-serif;
+$primary-color: #222222;
+$secondary-color: #E6BC02;
+$extra-color: #E69E02;
+$white: #FFFFFF;
+$gray: #9AE8FC;
+
+ /* ================
+ * GENERIC
+ * ================
+ */
+body{ 
+	font-family: $body-font; 
+    background-color: $gray;
+    margin	: 0;
+ 	padding	: 0;
+}
+#container{
+	background-color: $white; 
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+		    overflow: hidden;
+
+	#content{
+		padding:40px;
+	}
+}
+.row{
+	margin-bottom: 0;
+	width: 100%;
+	clear:left;
+}
+.row-content{
+	padding-bottom: 80px;
+	width: 100%;
+	clear:left;
+}
+.line{
+	border-bottom: 3px solid #000;
+	width: 100%;
+}
+.column-small{
+	width: auto;
+	float: left;
+	margin-right: 20px;
+}
+.column-medium{
+	width: 200px;
+	float: left;
+}
+.column-large{
+	width: 500px;
+	float: left;
+}
+.profilepicture{
+	width: 60px;
+}
+.date{
+	color: $secondary-color;
+	font: 0.8em "Open Sans", sans-serif;
+}
+.delete-tweet{
+	text-align:right;
+	float:none;
+}
+.username{
+	font-style: italic;
+	color: $gray;
+}
+.warning{
+	color: #ff0000;
+	font-size: 0.9em;
+}
+.success{
+	color: #00B000;
+	font-size: 0.9em;	
+}
+
+
+/*
+* ================
+* HEADER
+* ================
+ */
+header{
+	padding: 0;
+}
+
+/**
+ * ===========
+ * LOGOTYPE
+ * ===========
+ */
+#header{
+	background: url('../images/header_960x400_x1.png') no-repeat;
+    width: 960px;
+    height: 400px;
+    background-size: 960px 400px;
+    display: block;
+    margin-right: auto;
+	margin-left: auto;
+}
+/* Logo for retina displays */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    #header{
+	background: url('../images/header_1920x800_x2.png') no-repeat;
+    width: 960px;
+    height: 400px;
+    background-size: 960px 400px;
+    margin-right: auto;
+	margin-left: auto;
+    }
+}
+#brandname{
+	padding-top: 0;
+	font: 2.9em "Open Sans", sans-serif;
+	color: $primary-color;
+	font-weight: bold;
+	text-align:center;
+}
+
+/*
+* =======================
+* GENERIC PAGE STYLES
+* =======================
+ */
+h1{
+	color: $primary-color;
+}
+p{
+	font: 0.9em "Open Sans", sans-serif;
+	margin:0;
+}
+
+/*
+* =======================
+* GOOGLE MAP STYLES
+* =======================
+ */
+html, body 
+{
+ height: 100%;
+
+}
+
+#map 
+{
+  height: 450px;
+  width: 100%;
+}
+
+/**
+ * =============
+ * FORMS
+ * =============
+ */
+form {
+  max-width: 500px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
+}
+
+.form_map{
+	width: 450px !important;
+	height: 350px !important;
+}
+input[type="submit"] {
+  padding: 15px 20px;
+  color: #FFF;
+  background-color: $extra-color;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 3px;
+  border: 1px solid $extra-color;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/**
+ * =============
+ * LISTS
+ * =============
+ */
+ul #flickr_image{
+	margin: 0;
+	padding: 0;
+}
+
+#flickr_images li{
+	list-style: none;
+	display: block;
+	float:left;
+	
+	margin: 0 15px 15px 0;
+}
